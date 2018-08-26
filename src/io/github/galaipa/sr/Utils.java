@@ -35,7 +35,7 @@ public class Utils {
         }else if(SimpleRename.characterLimit != 0 && message.length() > SimpleRename.characterLimit){
             p.sendMessage(ChatColor.RED +(getTranslation("19")) + SimpleRename.characterLimit);
             return false;
-        }else if(item != null &&item.getType().equals(Material.AIR)){ // CHECK ITEM IN HAND IS NOT AIR
+        }else if(item != null && item.getType().equals(Material.AIR)){ // CHECK ITEM IN HAND IS NOT AIR
             p.sendMessage(ChatColor.RED+(getTranslation("4")));
             return false;
         }else if(!p.hasPermission("sr.blacklist") && !checkName(message)){ //CHECK MESSAGE BLACKLIST
